@@ -13,7 +13,7 @@ describe("Contact page form", () => {
     cy.visit(CONTACT_PAGE_ENDPOINT.contact.endpoint);
   });
 
-  it.only("Send feedbacks - happy path", () => {
+  it("Send feedbacks - happy path", () => {
     const captchaText = Cypress.$(form.captcha.self).text();
     const form_obj = contactPage.fillFormData("I'm love your services", 4);
     contactPage.verifyRequestDone(CONTACT_PAGE_ENDPOINT.feedbacks.alias, form_obj)
