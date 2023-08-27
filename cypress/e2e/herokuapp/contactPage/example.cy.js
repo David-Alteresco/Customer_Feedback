@@ -49,7 +49,7 @@ describe("Contact page form", () => {
     contactPage.verifyEmptyForm();
   });
 
-  it.only("Send feedbacks with long text", () => {
+  it("Send feedbacks with long text", () => {
     const form_obj = contactPage.fillFormData(longText.slice(0, 160), 3);
     contactPage.verifyRequestDone(
       CONTACT_PAGE_ENDPOINT.feedbacks.alias,
