@@ -1,0 +1,25 @@
+{
+  "name": "customer_support",
+  "version": "1.0.0",
+  "description": "Home Assignment liquidity",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run",
+    "test-debug-chrome": "npx cypress run --headed --browser chrome --no-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-Alteresco/Customer_Feedback.git"
+  },
+  "author": "David Alteresco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David-Alteresco/Customer_Feedback/issues"
+  },
+  "homepage": "https://github.com/David-Alteresco/Customer_Feedback#readme",
+  "dependencies": {
+    "cypress": "^12.17.4",
+    "cypress-network-idle": "^1.14.2"
+  }
+}
