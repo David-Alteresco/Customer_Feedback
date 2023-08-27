@@ -1,5 +1,17 @@
 # Customer_Feedback
+
+
+
 The purpose of this project is to test E2E with Cypress
+
+usage: 
+1. npm install
+2. Run headless false
+   npm run test-debug-chrome
+4. Run headless true
+   npm run cy:run
+6. Open cypress test runner
+   npm run cypress:open
 
 Examples of scenarios:
 
