@@ -1,13 +1,14 @@
 const form = {
   self: "#feedback-form",
   author: {
-    inputType: "#feedback-form > mat-form-field  input",
+    inputType: "#feedback-form > mat-form-field input",
+    disableTextField: "#feedback-form mat-form-field:nth-child(2) input"
   },
   comment: {
     input: "#comment",
   },
   rating: {
-    self: "#feedback-form #rating",
+    self: "#rating",
   },
   captcha: {
     self: "#captcha",

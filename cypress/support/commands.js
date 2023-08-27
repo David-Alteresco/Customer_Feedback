@@ -25,11 +25,16 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import "cypress-network-idle";
-import { DIRECTIONS } from "./constants/global";
+import { DIRECTIONS , PROPS } from "./constants/global";
 
 Cypress.Commands.overwrite("visit", (originalFn, url, options) => {
   originalFn(url, options);
   cy.waitForNetworkIdle(5000);
+});
+
+Cypress.Commands.add("removeDisableAndAddText", (selector, text) => {
+  Cypress.$(selector).prop(PROPS.disabled,false);
+  cy.get(selector).type(text);
 });
 
 // drag and drop of slider by values
