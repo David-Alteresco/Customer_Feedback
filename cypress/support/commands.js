@@ -37,6 +37,7 @@ Cypress.Commands.add("removeDisableAndAddText", (selector, text) => {
   cy.get(selector).type(text);
 });
 
+
 // drag and drop of slider by values
 Cypress.Commands.add("moveValueSlider", (selector, targetValue, dirction) => {
   const valueMax = Cypress.$(selector).attr("aria-valuemax");

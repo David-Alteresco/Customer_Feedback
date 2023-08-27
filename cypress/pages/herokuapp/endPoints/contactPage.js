@@ -5,6 +5,10 @@ const CONTACT_PAGE_ENDPOINT = {
   },
   contact:{
     endpoint: "contact",
+  },
+  captcha:{
+    endpoint: "rest/captcha/",
+    alias: "captcha",
   }
 };
 

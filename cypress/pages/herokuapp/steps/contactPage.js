@@ -47,6 +47,14 @@ const contactPage = {
       expect(response.statusCode).to.equal(201);
     });
   },
+
+  changeResponse: (alias, obj) => {
+    cy.wait(`@${alias}`).then(({ request, response }) => {
+      expect(request.method).to.equal(METHOD.post);
+      expect(request.body).to.deep.include(obj);
+      expect(response.statusCode).to.equal(201);
+    });
+  },
 };
 
 export { contactPage };
